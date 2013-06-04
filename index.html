@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <title>2013s WIP/Term Chat</title>
+	<script type="text/javascript" src="./code/jquery.js"></script>
+	<script type="text/javascript" src="./code/csv.js"></script>
+	<script type="text/javascript" src="./code/chat.js"></script>
+  </head>
+  <body onload="getChat(true)" onkeypress="keypress(event.keyCode)">
+	<div id="chat_window" style="height:500px;overflow-y:scroll;">
+	  <table id="chat"></table>
+	</div>
+	<input type="text" size="8" id="name" placeholder="name"/>
+	<input type="text" size="50" id="content"/>
+	<input type="button" value="submit" onclick="chat();"/><br />
+	<input type="text" size="8" id="color" maxlength="7" placeholder="color" value="#000000"/>
+	<input type="checkbox" id="auto_scroll" checked>auto scroll
+  </body>
+</html>
